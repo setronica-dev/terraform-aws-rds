@@ -119,7 +119,7 @@ resource "aws_db_instance" "this" {
 
   lifecycle {
     ignore_changes = [
-      latest_restorable_time
+      latest_restorable_time, snapshot_identifier
     ]
   }
 }
